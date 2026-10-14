@@ -103,3 +103,22 @@ div > div:nth-of-type(3) {
 .cart-div:hover > p {
   display: block;
 }
+
+@media screen and (max-width: 768px) {
+  .grid-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-cont > div {
+    height: 400px;
+  }
+  .grid-cont > div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+    height: 400px;
+  }
+
+  .grid-cont > div:nth-child(2) {
+    grid-row: 2;
+    height: 400px;
+  }
+}
